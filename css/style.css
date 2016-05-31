@@ -1,0 +1,656 @@
+/************************* Reset ********************************/    
+* { box-sizing:border-box !important; }
+
+@import url(http://weloveiconfonts.com/api/?family=iconicfill);
+
+body {
+  text-align:center !important;
+  font:300 100%/1.5 'Amatic SC', cursive !important;
+}
+
+h1 { font-size:2rem !important;  }
+        
+a { cursor:pointer; text-decoration:none; color:#111; }
+a:hover { text-decoration:underline; }
+
+h1, h2, h3, h4, h5 , h6 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v3/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v3/IDnkRTPGcrSVo50UyYNK73hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+/********************** END  Reset ***************************/  
+
+/*********************************************/
+/****************** Index *******************/
+/*******************************************/
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+
+.navbar-brand{
+  font-size: 25px !important;
+}
+.navbar-nav{
+  font-size: 25px !important;
+}
+
+#bg{
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/cookies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff; 
+  position: relative;
+  min-height: 100%;
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+
+.fortune-text {
+
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  position: relative;
+	text-align: center;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255, 255,.5));
+	padding: 25px;
+
+ /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  
+}
+.fortune-heading{
+  /*margin-top: 15px !important;*/
+  padding: 25px !important;
+  font-size: 40px;
+  /*font-weight: bold*/
+}
+
+
+.fc-img{
+	width: 125px !important; 
+	margin-top: 25px !important;
+}
+
+.creatures{
+  /*width: 250px;*/
+}
+
+/**************************/
+/***** Speach Bubble *****/
+/************************/
+
+
+.cookie-quote{
+  border-left: none;
+}
+
+.oval-thought {
+  position:relative;
+  margin: 0 auto ;
+  width:225px;
+  padding:50px 40px;
+  text-align:center;
+  background-color: #fff;
+  color: red;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 0;
+
+}
+
+.oval-thought p {font-size:1.25em;}
+
+/* creates the larger circle */
+.oval-thought:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  /*left: 120px;*/
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* creates the smaller circle */
+.oval-thought:after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  /*left: 121px;*/
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+
+/********* Buttons **********/
+
+button.example {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  padding: 4px 20px 0;
+  margin: 10px auto;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button.facebook {
+  border-left: solid 1px #2E4476;
+  background: #3B5999;
+  -webkit-box-shadow: 0px 5px 0px 0px #2E4476;
+  box-shadow: 0px 5px 0px 0px #2E4476;
+}
+
+button.twitter {
+  border-left: solid 1px #269BD0;
+  background: #46C1F6;
+
+  -webkit-box-shadow: 0px 5px 0px 0px #269BD0;
+  box-shadow: 0px 5px 0px 0px #269BD0;
+}
+
+button.example:active {
+  top: 3px;
+}
+
+button.facebook:active {
+  -webkit-box-shadow: 0px 2px 0px 0px #2E4476;
+  box-shadow: 0px 2px 0px 0px #2E4476;
+}
+button.twitter:active {
+  -webkit-box-shadow: 0px 2px 0px 0px #269BD0;
+  box-shadow: 0px 2px 0px 0px #269BD0;
+}
+
+button.facebook:before {
+  border-right: solid 1px #2E4476;
+  background: #3B5999;
+  -webkit-box-shadow: 0px 5px 0px 0px #2E4476;
+  box-shadow: 0px 5px 0px 0px #2E4476;
+}
+button.twitter:before {
+  border-right: solid 1px #269BD0;
+  background: #46C1F6;
+  -webkit-box-shadow: 0px 5px 0px 0px #269BD0;
+  box-shadow: 0px 5px 0px 0px #269BD0;
+}
+
+button.example:active:before {
+  top: -3px;
+}
+
+button.facebook:active:before {
+  -webkit-box-shadow: 0px 5px 0px 0px #2E4476, 6px 4px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 0px 0px #2E4476, 6px 4px 2px rgba(0,0,0,0.3);
+}
+
+button.twitter:active:before {
+  -webkit-box-shadow: 0px 5px 0px 0px #269BD0, 6px 4px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 0px 0px #269BD0, 6px 4px 2px rgba(0,0,0,0.3);
+}
+
+.anchor-tweet {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.anchor-tweet:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.anchor-tweet:active {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.anchor-tweet:visited {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+   
+/* Creature container ========== */    
+
+.creatures{
+  padding: 0px !important;
+  /*margin-top: 25px;*/
+}
+
+.creatures li {
+   display:inline-block;
+   vertical-align:top;
+   text-align:center;
+   width:100px;
+   list-style:none;
+   margin:0 auto;
+   padding:10px 30px;
+   user-select:none;
+}
+
+
+
+/* Creature ================== */
+figure {
+  display:inline-block;
+        width:50px;
+        height:50px;
+        padding:10px;
+        box-shadow:inset -10px -30px rgba(0,0,0,.06);
+        -moz-border-radius:100px;
+        -webkit-border-radius:100px;
+        border-radius:50%;
+        animation:bobble 5s ease-in-out infinite;
+        transform-origin:center bottom;
+        transition:padding .3s, bottom .3s;
+        text-align:center;
+    }
+    @keyframes bobble { 33%{ transform:rotate(5deg); } 66%{ transform:rotate(-5deg); } }
+    
+    li:nth-child(5n+1) figure { animation-delay:-3s; background-color:tomato; }
+    li:nth-child(5n+2) figure { animation-delay:-1s; background-color:dodgerblue; }
+    li:nth-child(5n+3) figure { animation-delay:-4s; background-color:coral; }
+    li:nth-child(5n+4) figure { animation-delay:-.2.5s; background-color:limegreen; }   
+    
+  
+    li:hover .click-anim { transform:translateY(-6px); }
+    
+    
+   .click-anim { transition:.3s cubic-bezier(.15,.60,.30,1.9); transform-origin:center bottom; }
+        li:active .click-anim { transform:scale(1.1);  } 
+
+
+    
+    
+/* Shadow ======================================================= */
+    .shadow {
+        height:20px;
+        background:rgba(0,0,0,.1);
+        width:60%;
+        border-radius:100%;
+        margin:-15px 0 0 30%;
+        transition:.3s;
+    }
+    li:hover .shadow { background:rgba(0,0,0,.05); } 
+    li:active .shadow { background:rgba(0,0,0,.08); width:70%; }
+    
+    
+    
+/* Eyes ======================================================== */
+    .eye {
+        display:inline-block;
+        width:3px;
+        height:5px;
+        margin:0 0px 0px;
+        background:rgba(0,0,0,.9);
+        border-radius: 0px;
+        border-radius: 50%;
+        animation:blink 4s ease-in-out infinite;
+    }
+    @keyframes blink { 90% { transform:none; } 95% { transform:rotateX(90deg); } }
+    .eyebrow-left-mad {
+    position: absolute;
+      width: 5px;
+      height: 1px;
+      margin: 3px 0px 0px 17px;
+    background: rgba(0,0,0,.9);
+    border-radius: 0px;
+    border-radius: 50%;
+    -ms-transform: skew(-50deg);
+    -webkit-transform: skew(-50deg);
+    transform: skew(50deg);
+    transform-origin: bottom left;
+    }
+    .eyebrow-right-mad {
+      position: absolute;
+      width: 5px;
+      height: 1px;
+      margin: 3px 0px 0px 6px;
+      background: rgba(0,0,0,.9);
+      border-radius: 0px;
+      border-radius: 50%;
+      -ms-transform: skew(50deg);
+      -webkit-transform: skew(50deg);
+      transform: skew(-50deg);
+      transform-origin: bottom left;
+    }
+    
+    
+/* Moustache =================================================== */    
+    .moustache { 
+      display:inline-block; 
+      width:100%; 
+      height: 0px; 
+    }
+    .moustache:before, .moustache:after { 
+      /*display:inline-block;  */
+      color:rgba(0,0,0,.9); 
+      content:"~"; 
+      font-size:2em; 
+      line-height:0; 
+      font:2em/ 10px "Helvetica", Arial; 
+      margin:0 -2px; 
+    }
+    .moustache:before { 
+      transform:rotateY(180deg); 
+    }
+    
+    li:hover .moustache { animation:moustache-wiggle 2s infinite; }
+    @keyframes moustache-wiggle { 50%,90%{ transform:none; } 60%,80%{ transform:rotate(-5deg); } 70%{ transform:rotate(5deg); } }
+    
+    
+    
+/* Mouth =================================================== */    
+     .mouth {
+              display:block;
+              width:100%;
+              height:10px;
+              margin:5px auto 0;
+              background:rgba(0,0,0,.9);
+
+              border-radius:10px 10px 50% 50%;
+              transition:border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+              overflow:hidden;
+              line-height:0;
+              transform-origin:center top; 
+          }
+
+          .mouth-surprised{
+            display: block;
+            width: 70%;
+            height: 15px;
+            margin: 5px auto 0;
+            background: rgba(0,0,0,.9);
+            border-radius: 15px;
+            transition: border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+            overflow: hidden;
+            line-height: 0;
+            transform-origin: center top;
+          }
+
+          .mouth-frustrated {
+            display: block;
+            width: 100%;
+            margin: 5px auto 0;
+            border-radius: 80px 80px 0px 0px;
+            transition: border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+            overflow: hidden;
+            line-height: 0;
+            transform-origin: center top;
+            border-top: 3px solid black;
+            background-color: transparent;
+          }
+
+    .mouth-sad{
+                display:block;
+                width:80%;
+                height:5px;
+                margin:5px auto 0;
+                background:rgba(0,0,0,.9);
+              background-color: transparent;
+              border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+              border-top-right-radius: 110px; /* 100px of height + 10px of border */
+              border: 2px solid black;
+              border-bottom: 0;
+              transition:border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+                overflow:hidden;
+                line-height:0;
+                transform-origin:center top; 
+        }
+
+        .eyebrow-left {
+              position: absolute;
+              width:3px;
+              height:5px;
+              margin: 2px 0px 0px 4px;
+              background:rgba(0,0,0,.9);
+              border-radius: 0px;
+              border-radius: 50%;
+              -ms-transform: skew(-50deg); /* IE 9 */
+            -webkit-transform: skew(-50deg); /* Chrome, Safari, Opera */
+            transform: skew(-50deg); /* Standard syntax */
+            transform-origin: bottom left;
+          }
+
+          .eyebrow-right{
+            position: absolute;
+              width:3px;
+              height:5px;
+              margin: 2px 0px 0px 22px;
+              background:rgba(0,0,0,.9);
+              border-radius: 0px;
+              border-radius: 50%;
+              -ms-transform: skew(50deg); /* IE 9 */
+            -webkit-transform: skew(50deg); /* Chrome, Safari, Opera */
+            transform: skew(50deg); /* Standard syntax */
+            transform-origin: bottom left;
+          }
+
+
+    
+    .teeth:after,
+    .teeth:before,
+    .tooth:after {
+        display:inline-block;
+        content:"";
+        margin:0 2px;
+        width:5px;
+        height:5px;
+        background:#eee;
+    }
+    li:nth-child(odd) .tooth:after { margin-right:7px; }
+    li:nth-child(even) .tooth:after { margin-left:7px; }
+
+
+
+/* Behaviors =================================================== */  
+    .hungry .mouth { 
+      animation:hungry .5s infinite; 
+      border-radius: 5px 5px 50% 50%; 
+      height:10px; 
+    }
+    .hungry .mouth:hover { 
+      cursor:none; 
+    }
+    
+    @keyframes hungry { 40%{ height:5px; } }
+    
+    .nervous .mouth { animation:nervous .2s infinite; border-radius:40% 40% 5px 5px; }
+        @keyframes nervous { 50%{ height:10px; } }
+    
+    .hyper { animation:hyper 2s infinite; }
+        @keyframes hyper {
+            25%{ transform:translateY(-10px); }
+            15%,50%{ transform:rotateX(20deg); }
+            75%{ transform:none; }
+        }
+    .hyper .mouth { height:10px; border-radius: 5px 5px 50% 50%; }
+
+
+/************   Insert Text    **************/
+
+  #bg-insert{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/cookies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    position: relative;
+  }
+
+  .insert-tex-title{
+    font-size: 30px !important;
+    display: inline-block;
+  }
+
+  .fortune-form{
+    padding-top: 50px;
+  }
+
+  .fortune-btn {
+    margin-top: 15px;
+  }
+  .form-control{
+    font-size: 25px !important;
+  }
+  
+  /* iconicfill */
+  [class*="iconicfill-"]:before {
+    font-family: 'IconicFill', sans-serif;
+    color: black;
+  }
+
+  .iconicfill-pen-alt2{
+
+      font-size:25px;
+      opacity: 1;
+      display: inline-block;
+      margin-left: 5px;
+  }
+
+  .error{
+    font-size:25px;
+  }
+
+  .emotions-insert{
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .robotic { display: none; }
+
+
+
+  /* ==== Pen animation ==== */
+  .move-pen{animation: move-pen 1s ease-in infinite alternate;}
+  @keyframes move-pen{
+      from{transform:translateX(-4px) rotate(6deg);}
+      to{transform:translateX(4px) rotate(-3deg);}
+  }
+
+
+  .powered{
+    margin-top: 50px;
+
+  }
+
+  .powered a{
+    color: white !important;
+    font-size: 40px;
+  }
+
+
+
+/*****   FORTUNE COOKIES QUOTES  ******/
+
+img.fc{
+	width: 75px !important;
+}
+.quote-div{
+  padding: 0 !important
+}
+
+.quotes{
+  text-align: left;
+  margin-top: 50px;
+}
+
+.fortune-cookie li {
+  margin-top: 30px !important;
+	display: inline-block;
+  font-size: 25px !important;
+ 
+}
+
+.quote-img{
+  text-align: center;
+}
+
+
+
+
+/***************** MEDIA QUERIES ******************/
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+  .navbar-brand{
+    font-size: 36px !important;
+  }
+  .fortune-heading{
+    font-size: 80px;
+  }
+  .creatures{
+    width: 100%;
+  } 
+  .fortune-form{
+    padding-top: 100px;
+  }
+  .fortune-cookie li {
+    font-size: 45px !important;
+  }
+  #bg{
+    min-height: calc(100vh - 52px);
+  }
+  #bg-insert{
+      height: calc(100vh - 52px);
+  }
+  .oval-thought {
+    width: 80%;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 992px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
